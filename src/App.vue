@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="pa-4 min-h-full bg-blue-800 flex justify-center font-body">
+    <div class="w-full max-w-500px">
+      <EthereumBalance :address="address" />
+      <TokensTable :address="address" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import EthereumBalance from './components/EthereumBalance.vue';
+import TokensTable from './components/TokensTable.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld,
+    EthereumBalance,
+    TokensTable,
   },
+
+  data: () => ({
+    address: '0xA145ac099E3d2e9781C9c848249E2e6b256b030D',
+  }),
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  html,
+  body {
+    height: 100%;
+  }
 </style>

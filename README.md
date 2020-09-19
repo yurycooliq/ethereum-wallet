@@ -1,9 +1,16 @@
-# ad-motion
+# Balance Checker
+
+See the [DEMO](https://ad-motion-balance-checker.github.io).
 
 ## Project setup
 ```
+git clone https://github.com/yurycooliq/balance-checker
+cd balance-checker
 npm install
+cp .env-exapmle .env.local
 ```
+
+Don't forget to fill `.env` file with correct values.
 
 ### Compiles and hot-reloads for development
 ```
@@ -24,6 +31,3 @@ npm run test:unit
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
