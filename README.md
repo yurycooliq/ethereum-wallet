@@ -1,16 +1,17 @@
 # Balance Checker
-
-See the [DEMO](https://ad-motion-balance-checker.github.io).
+See the [DEMO](https://yurycooliq.github.io/balance-checker).
 
 ## Project setup
 ```
 git clone https://github.com/yurycooliq/balance-checker
 cd balance-checker
 npm install
-cp .env-exapmle .env.local
+cp .env-exapmle .env.development.local
+cp .env-exapmle .env.production.local
+cp .env-exapmle .env.test.local
 ```
 
-Don't forget to fill `.env` file with correct values.
+Don't forget to fill your env files with correct values.
 
 ### Compiles and hot-reloads for development
 ```
