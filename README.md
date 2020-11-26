@@ -1,7 +1,7 @@
 # Ethereum Wallet
 Ethereum and ERC-20 tokens wallet build with Web3.js and Vue.js.
 
-➡️Watch [DEMO](https://yurycooliq.github.io/eth-wallet/) ⬅️
+➡️ Watch [DEMO](https://yurycooliq.github.io/eth-wallet/) ⬅️
 
 ## Project setup
 ```
