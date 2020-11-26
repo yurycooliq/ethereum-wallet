@@ -36,10 +36,10 @@
       </div>
       <div class="font-bold">
         <button class="px-2 py-1 rounded"
-                :class="{'bg-blue-200': isSendButtonActive}"
+                :class="{'bg-gray-200': isSendButtonActive}"
                 @click="isSendButtonActive = !isSendButtonActive"
         >
-          SEND
+          📮 Send
         </button>
       </div>
     </div>

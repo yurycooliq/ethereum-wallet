@@ -12,7 +12,9 @@ module.exports = {
     maxWidth: {
       '500px': '500px',
     },
-    extend: {},
+    extend: {
+      opacity: ['disabled'],
+    },
   },
   variants: {},
   plugins: [],

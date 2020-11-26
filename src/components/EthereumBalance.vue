@@ -37,8 +37,9 @@
            v-text="'View on Etherscan'"
         />
         <button class="px-4 py-1 rounded bg-yellow-500 hover:bg-yellow-300"
-                v-text="'Send'"
-                :disabled="address === '' || amount === '' || isSending"
+                :class="{'opacity-50': disabled}"
+                v-text="'🚀 Send ETH'"
+                :disabled="disabled"
                 @click="send"
         />
       </div>
@@ -74,6 +75,9 @@ export default {
     },
     address() {
       return this.$store.getters.address;
+    },
+    disabled() {
+      return this.addressTo === '' || this.amount === '' || this.isSending;
     },
   },
 
@@ -111,20 +115,13 @@ export default {
           .on('transactionHash', (hash) => {
             this.tx = hash;
           })
-          // .on('receipt', (receipt) => {
-          //   console.log('receipt', receipt);
-          // })
           .on('confirmation', () => {
-            // confirmationNumber, receipt
             this.status = 'Success';
             this.isSending = false;
-            // console.log('confirmationNumber', confirmationNumber);
-            // console.log('receipt', receipt);
           })
-          .on('error', (error) => {
+          .on('error', () => {
             this.status = 'Fail';
             this.isSending = false;
-            console.error(error);
           });
       }
     },
