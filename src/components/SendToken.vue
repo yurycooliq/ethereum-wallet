@@ -78,10 +78,10 @@ export default {
         this.status = 'Pending';
 
         const token = this.info.address;
-        const shitCoin = new window.web3.eth.Contract(abi, token);
+        const tokenContract = new window.web3.eth.Contract(abi, token);
         const value = Math.round(this.amount * (10 ** this.info.decimals));
 
-        shitCoin.methods.transfer(this.addressTo, value)
+        tokenContract.methods.transfer(this.addressTo, value)
           .send({ from: this.address })
           .on('transactionHash', (hash) => {
             this.tx = hash;
