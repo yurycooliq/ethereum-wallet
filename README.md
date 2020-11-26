@@ -1,17 +1,15 @@
-# Balance Checker
-See the [DEMO](https://yurycooliq.github.io/balance-checker).
+# Ethereum Wallet
+Ethereum and ERC-20 tokens wallet build with Web3.js and Vue.js.
+
+➡️Watch [DEMO](https://yurycooliq.github.io/eth-wallet/) ⬅️
 
 ## Project setup
 ```
-git clone https://github.com/yurycooliq/balance-checker
-cd balance-checker
-npm install
-cp .env-exapmle .env.development.local
-cp .env-exapmle .env.production.local
-cp .env-exapmle .env.test.local
+git clone https://github.com/yurycooliq/ethereum-wallet
+cd ethereum-wallet
+npm i
+cp .env-exapmle .env
 ```
-
-Don't forget to fill your env files with correct values.
 
 ### Compiles and hot-reloads for development
 ```

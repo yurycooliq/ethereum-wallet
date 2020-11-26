@@ -32,3 +32,8 @@ export default {
   },
 };
 </script>
+
+<style lang="sass">
+  html, body
+    height: 100%
+</style>
